@@ -2,7 +2,14 @@
   "compilerOptions": {
     "composite": true,
     "module": "esnext",
-    "moduleResolution": "node"
+    "moduleResolution": "node",
+    "target": "esnext",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "outDir": "dist"
   },
-  "include": ["vite.config.ts"]
+  "include": ["src/**/*", "vite.config.ts"],
+  "exclude": ["node_modules", "dist"]
 }
